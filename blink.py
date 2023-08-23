@@ -13,7 +13,6 @@ import functools
 import asyncio
 from aiohttp import ClientSession
 import time
-from asyncpg.pool import Pool
 from collections import OrderedDict
 from queue import PriorityQueue
 from typing import Callable, List, Union
@@ -58,7 +57,7 @@ class Timer:
 
 
 class DBCache():
-    def __init__(self, db: Pool, identifier: str, statement: str, values: tuple):
+    def __init__(self, db, identifier: str, statement: str, values: tuple):
         self.db = db # Pooled database connection
         self.identifier = identifier # The unique ID of the cache
         self.statement = statement # SQL Query to update cache

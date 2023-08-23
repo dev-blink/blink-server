@@ -1,0 +1,4 @@
+autobahn
+async_timeout
+aiohttp
+discord.py
