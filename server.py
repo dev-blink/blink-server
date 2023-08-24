@@ -70,6 +70,7 @@ class ServerProtocol(websocket.WebSocketServerProtocol):
         self.open = False
         self.ops = [0, 1, 2, 3, 4, 5, 6, 7] # List of valid opcodes
         self.beating = False
+        self.identifier = "UNASSIGNED"
         self.handlers = {
             0: self.invalid_opcode,
             1: self.identify,
