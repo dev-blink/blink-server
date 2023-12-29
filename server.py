@@ -1,7 +1,7 @@
 # Copyright © Aidan Allen - All Rights Reserved
 # Unauthorized copying of this project, via any medium is strictly prohibited
 # Proprietary and confidential
-# Written by Aidan Allen <allenaidan92@icloud.com>, 29 May 2021
+# Written by <blink@aaix.dev>, 29 Dec 2023
 
 
 # TODO: rewrite this in rust
